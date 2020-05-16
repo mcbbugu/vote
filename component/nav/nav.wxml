@@ -1,0 +1,8 @@
+<!--component/nav/nav.wxml-->
+<view class='nav-wrap' style="background-color:{{bgColor}};">
+    <view style="height:{{statusBarHeight}}px;"></view>
+    <view class='content'>
+        <slot name="content"></slot>
+        <view class='back' bindtap='back'></view>
+    </view>
+</view>

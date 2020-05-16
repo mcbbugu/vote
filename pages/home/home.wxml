@@ -1,0 +1,7 @@
+<!--pages/home/home.wxml-->
+<nav bgColor="black">
+    <view slot="content">
+        <view class='txt'>Nav title</view>
+    </view>
+</nav>
+<view>page content</view>
