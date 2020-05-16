@@ -1,1 +1,5 @@
 /* pages/home/home.wxss */
+.img image{
+  text-align: center;
+  width: 100%;
+}

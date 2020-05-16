@@ -1,12 +1,23 @@
 // component/nav/nav.js
+const app = getApp()
 Component({
-
   options: {
     multipleSlots: true
   },
 
   properties: {
-
+    title: {
+      type: String,
+      value: ''
+    },
+    bgColor: {
+      type: String,
+      value: ""
+    },
+    hastop: {
+      type: Boolean,
+      value: false
+    }
   },
 
   ready() {

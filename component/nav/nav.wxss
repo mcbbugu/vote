@@ -13,11 +13,35 @@
     height: 44px;
 }
 
-.back {
+.operation {
     position: absolute;
     left: 0;
     top: 0;
-    width: 88px;
-    height: 44px;
-    background: pink;
+    width: 85px;
+    height: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    border-radius: 40rpx;
+    background: rgba(255, 255, 255, .6);
+    border: 1px solid rgba(0, 0, 0, .1);
+    margin: 5px 0 0 5px;
+}
+.line{
+  background: rgba(252, 252, 252, .1);
+  width: 0.5px;
+  height: 18px;
+  margin-bottom: 6px;
+  border-left: 1rpx solid rgba(252, 252, 252, .3);
+}
+
+.title {
+    text-align: center;
+    line-height: 44px;
+    font-weight: 500;
+}
+
+.operation image{
+   width: 45rpx;
+   height: 45rpx;
 }

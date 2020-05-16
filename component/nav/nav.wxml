@@ -2,7 +2,16 @@
 <view class='nav-wrap' style="background-color:{{bgColor}};">
     <view style="height:{{statusBarHeight}}px;"></view>
     <view class='content'>
-        <slot name="content"></slot>
-        <view class='back' bindtap='back'></view>
+        <view class="title">{{title}}</view>
+        <view class='operation'>
+          <view class="back" bindtap="goBack">
+            <image src="../../images/left.svg"></image>
+          </view>
+          <view class="line"></view>
+          <view class="goHome" bindtap="goHome">
+            <image src="../../images/home.svg"></image>
+          </view>
+        </view>
     </view>
 </view>
+<view wx:if="{{hastop}}" style="width:100%;height:{{navBarHeight}}px;"></view>

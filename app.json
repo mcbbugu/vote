@@ -13,18 +13,24 @@
     "navigationStyle": "custom"
   },
   "tabBar": {
+    "color": "#cccccc",
+    "selectedColor": "#ffcd67",
+    "borderStyle": "white",
     "list": [
       {
-        "pagePath": "pages/index/index",
-        "text": "首页"
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "images/home1.png",
+        "selectedIconPath": "images/home1-select.png"
       },
       {
-        "pagePath": "pages/home/home",
-        "text": "日志"
+        "pagePath": "pages/logs/logs",
+        "text": "我的",
+        "iconPath": "images/my.png",
+        "selectedIconPath": "images/my-select.png"
       }
     ]
   },
-  //可以
   "usingComponents": {
     "nav": "../component/nav/nav"
   },

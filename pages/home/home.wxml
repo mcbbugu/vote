@@ -1,7 +1,5 @@
 <!--pages/home/home.wxml-->
-<nav bgColor="black">
-    <view slot="content">
-        <view class='txt'>Nav title</view>
-    </view>
-</nav>
-<view>page content</view>
+<nav></nav>
+<view class="img">
+  <image src='../../images/vote.png' mode='aspectFill'></image>
+</view>
