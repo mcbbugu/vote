@@ -33,7 +33,8 @@
   },
   "usingComponents": {
     "nav": "../component/nav/nav",
-    "search": "../component/search/search"
+    "search": "../component/search/search",
+    "loading": "../component/loading/loading"
   },
   "style": "v2",
   "sitemapLocation": "sitemap.json"

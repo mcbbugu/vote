@@ -1,6 +1,32 @@
 <!--pages/home/home.wxml-->
 <nav></nav>
-<view class="img">
-  <image src='../../images/vote.png' mode='aspectFill'></image>
+<loading loading="{{isLoading}}"></loading>
+<view class="home">
+  <view class="imgClass">
+    <image src='../../images/vote.png' mode='aspectFill'></image>
+  </view>
+  <!-- 中间模块 start -->
+  <view class="main">
+    <view class="layout">
+      <view class="search">
+        <search></search>
+      </view>
+      <view class="btn">
+        <view class="{{whichBtn==1?'launch':'follow'}}" bindtap="clickLaunch">我发起的</view>
+        <view class="{{whichBtn==2?'launch':'follow'}}" bindtap="clickFollow">我关注的</view>
+      </view>
+    </view>
+  </view>
+  <!-- 中间模块 end -->
+  <view class="vote">
+    <view class="voteList" wx:for="{{voteList}}" wx:key="index">
+      <view class="img">
+        <image src="{{item.image}}"></image>
+      </view>
+      <view class="content">
+        <view>{{item.title}}</view>
+        <view>{{item.peopelNum}}</view>
+      </view>
+    </view>
+  </view>
 </view>
-<search></search>

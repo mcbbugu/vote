@@ -1,5 +1,2 @@
 <!--logs.wxml-->
 <nav></nav>
-<view class="img">
-  <image src='../../images/vote.jpg' mode='aspectFill'></image>
-</view>

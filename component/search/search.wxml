@@ -12,17 +12,26 @@
   <!-- 搜索框 end -->
 
   <!-- 搜索记录 start -->
-  <view class="record" wx:if="{{inputFocus}}">
-    <view class="inputRecord">
-      <view class="recordElement" wx:for="{{recordList}}" wx:key="index" bindtap="clickRecord" data-record="{{item.content}}">
-        {{item.content}} 
+  <view class="record" wx:if="{{inputFocus && fuzzySearchList==null}}">
+    <view class="recentSearch">
+      <view class="recentSearchElement" wx:for="{{recentSearchList}}" wx:key="index" bindtap="clickRecentSearch" data-record="{{item.content}}">
+        {{item.content}}
       </view>
     </view>
-    <view class="inputHistory">
-      <view wx:for="{{historyList}}" wx:key="index">
-        <view class="historyElement">{{item.content}}</view>
+    <view class="hotSearch">
+      <view wx:for="{{hotSearchList}}" wx:key="index">
+        <view class="hotSearchElement">{{item.content}}</view>
       </view>
     </view>
   </view>
   <!-- 搜索记录 end -->
+
+  <!-- 模糊查询 -->
+  <view class="record" wx:if="{{fuzzySearchList!=null}}">
+    <view class="fuzzySearch">
+      <view wx:for="{{fuzzySearchList}}" wx:key="index">
+        <view class="hotSearchElement">{{item.content}}</view>
+      </view>
+    </view>
+  </view>
 </view>

@@ -16,7 +16,7 @@ Component({
   data: {
     inputFocus: false,
     input: "",
-    recordList: [
+    recentSearchList: [
       {
         "index": 0,
         "content": "吃饭",
@@ -28,7 +28,7 @@ Component({
         "content": "吃饭",
       }
     ],
-    historyList: [{
+    hotSearchList: [{
         "index": 0,
         "content": "我",
       }, {
@@ -51,14 +51,12 @@ Component({
         inputFocus: true
       })
     },
-
     inputBlur(){
       this.setData({
         inputFocus: false
       })
     },
-
-    clickRecord(e){
+    clickRecentSearch(e){
       let record = e.currentTarget.dataset.record;
       this.setData({
         input: record

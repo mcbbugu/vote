@@ -1,6 +1,99 @@
 /* pages/home/home.wxss */
-.img image{
-  text-align: center;
-  width: 100%;
-  opacity: 0.7;
+.home{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
+.imgClass{
+  width: 100%;
+}
+.imgClass image{
+  width: 100%;
+}
+.search{
+  width:100%;
+  margin: 20rpx;
+}
+/* 中间模块 start */
+.main{
+  width: 95%;
+  border-radius: 10rpx;
+  height: 250rpx;
+  background: #fff;
+  position: absolute;
+  top: 460rpx;
+  box-shadow: 0rpx 3rpx 15rpx #66b3ff;
+}
+.layout{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.btn{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: #fff;
+  background: #66b3ff;
+  height: 75rpx;
+  width: 80%;
+  margin-top: 30rpx;
+}
+.launch{
+  display: flex;
+  align-items: center;
+  background: #66b3ff;
+  justify-content: center;
+  height: 75rpx;
+  flex: 1;
+  border: 1rpx solid #66b3ff;
+}
+.follow{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  height: 75rpx;
+  color: #66b3ff;
+  flex: 1;
+  border: 1rpx solid #66b3ff;
+}
+/* 中间模块 end */
+
+/* 投票列表 start */
+.vote{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  margin-top: 300rpx;
+  flex-wrap: wrap;
+  width: 95%;
+  border: 5rpx
+}
+.voteList{
+  padding: 10rpx;
+  margin: 10rpx;
+  width: 40%;
+  box-shadow: 0rpx 3rpx 15rpx #66b3ff;
+  border-radius: 10rpx;
+}
+.img image{
+  width: 280rpx;
+  height: 280rpx;
+}
+.img{
+  border-radius: 5rpx;
+  width: 350rpx;
+  height: 350rpx;
+}
+
+.content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+/* 投票列表 end */
