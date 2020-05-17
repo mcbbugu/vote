@@ -1,0 +1,65 @@
+/* component/search/search.wxss */
+.container{
+  flex-direction: column;
+  margin: 0 auto;
+  width: 60%;
+  display: flex;
+  justify-content: center;
+}
+
+/* 搜索框 start */
+.search{
+  display: flex;
+  flex-direction: row;
+  height:65rpx;
+  border: 1rpx solid #66b3ff;
+}
+.input input{
+  height: 65rpx;
+  padding-left: 10rpx;
+}
+
+.icon{
+  padding-left: 20rpx;
+}
+.icon image{
+  width: 50rpx;
+  height: 65rpx;
+}
+.phcolor{
+  color: #ccc;
+}
+/* 搜索框 end */
+
+/* 搜索记录 start */
+.record{
+  opacity: 0.5;
+  padding: 10rpx 5rpx;
+  box-shadow: 0rpx 3rpx 15rpx #66b3ff;
+  border-radius: 15rpx;
+}
+.inputRecord{
+  display: flex;
+  flex-direction: row;
+  flex-flow:row wrap;
+  font-size: 26rpx;
+  justify-content: start;
+  border-bottom: 1rpx  #fff;
+}
+.recordElement{
+  background: #66b3ff;
+  border-radius: 50rpx;
+  padding: 10rpx;
+  margin: 5rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.inputHistory{
+  margin-top: 10rpx;
+  border-top: 1rpx solid #fff;
+}
+.historyElement{
+  padding: 5rpx;
+}
+/* 搜索记录 end */

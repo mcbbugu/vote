@@ -32,7 +32,8 @@
     ]
   },
   "usingComponents": {
-    "nav": "../component/nav/nav"
+    "nav": "../component/nav/nav",
+    "search": "../component/search/search"
   },
   "style": "v2",
   "sitemapLocation": "sitemap.json"

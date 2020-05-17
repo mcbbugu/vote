@@ -3,3 +3,4 @@
 <view class="img">
   <image src='../../images/vote.png' mode='aspectFill'></image>
 </view>
+<search></search>
