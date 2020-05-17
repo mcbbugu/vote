@@ -6,39 +6,40 @@ Page({
    */
   data: {
     isLoading: true,
-    whichBtn: 1,
-    voteList:[{
+    voteList: [{
       "image": "../../images/voteList.jpg",
       "title": "今天去哪里吃饭今天去哪里吃饭今天去哪里吃饭",
       "peopelNum": 3
     },
-      {
-        "image": "../../images/voteList.jpg",
-        "title": "今天去哪里吃饭",
-        "peopelNum": 3
-      },
-      {
-        "image": "../../images/voteList.jpg",
-        "title": "今天去哪里吃饭",
-        "peopelNum": 3
-      }
+    {
+      "image": "../../images/voteList.jpg",
+      "title": "今天去哪里吃饭",
+      "peopelNum": 3
+    },
+    {
+      "image": "../../images/voteList.jpg",
+      "title": "今天去哪里吃饭",
+      "peopelNum": 3
+    }
       , {
-        "image": "../../images/voteList.jpg",
-        "title": "今天去哪里吃饭",
-        "peopelNum": 3
-      },
-      {
-        "image": "../../images/voteList.jpg",
-        "title": "今天去哪里吃饭今天去哪里吃饭今天去哪里吃饭",
-        "peopelNum": 3
-      }]
+      "image": "../../images/voteList.jpg",
+      "title": "今天去哪里吃饭",
+      "peopelNum": 3
+    },
+    {
+      "image": "../../images/voteList.jpg",
+      "title": "今天去哪里吃饭今天去哪里吃饭今天去哪里吃饭",
+      "peopelNum": 3
+    }],
+    nav: [{ index: 0, name: "热门投票" }, { index: 1, name: "我发起的" }, { index: 2, name: "我关注的" }],
+    index: 0 //导航下标
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    
+
   },
 
   /**
@@ -52,18 +53,12 @@ Page({
     }, 1000)
   },
 
-  // 按钮切换 start
-  clickLaunch(){
+  clickBtn(e) {
+    let index = e.currentTarget.dataset.index;
     this.setData({
-      whichBtn: 1
+      index: index
     })
   },
-  clickFollow() {
-    this.setData({
-      whichBtn: 2
-    })
-  },
-  // 按钮切换 end
 
   /**
    * 生命周期函数--监听页面显示

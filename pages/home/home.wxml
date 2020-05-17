@@ -12,8 +12,10 @@
         <search></search>
       </view>
       <view class="btn">
-        <view class="{{whichBtn==1?'launch':'follow'}}" bindtap="clickLaunch">我发起的</view>
-        <view class="{{whichBtn==2?'launch':'follow'}}" bindtap="clickFollow">我关注的</view>
+        <!-- 这里指定了当前下标的变量为 forIndex, 原本默认为 index, 和 js data 中的 index 作区分 -->
+        <view class="{{item.index==index?'selected':'unselected'}}" wx:for="{{nav}}" wx:key="index" wx:for-index="forIndex" data-index="{{forIndex}}" bindtap="clickBtn">
+          {{item.name}}
+        </view>
       </view>
     </view>
   </view>
