@@ -62,38 +62,55 @@
 }
 /* 中间模块 end */
 
-/* 投票列表 start */
+/* 列表 start */
 .vote{
   display: flex;
   align-items: flex-start;
   justify-content: center;
   flex-direction: row;
-  margin-top: 300rpx;
+  margin-top: 250rpx;
   flex-wrap: wrap;
   width: 95%;
-  border: 5rpx
+  border: 5rpx;
 }
 .voteList{
-  padding: 10rpx;
   margin: 10rpx;
-  width: 40%;
-  box-shadow: 0rpx 3rpx 15rpx #f1f1f1;
+  width: 42%;
+  box-shadow: 0rpx 3rpx 15rpx #ccc;
   border-radius: 10rpx;
+  font-size: 25rpx;
 }
+
 .img image{
-  width: 280rpx;
-  height: 280rpx;
+  width: 300rpx;
+  height: 300rpx;
 }
 .img{
   border-radius: 5rpx;
-  width: 350rpx;
-  height: 350rpx;
+  width: 300rpx;
+  height: 300rpx;
 }
-
-.content{
+.avator{
+  display: inline-block;
+  width: 35rpx;
+  height: 35rpx;
+  border-radius: 50%;
+}
+.avatorImageList{
+  width: 100%;
+  height: auto;
+  position: relative;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
+  padding: 10rpx 0 15rpx 15rpx;
+  box-sizing: border-box;
   align-items: center;
-  flex-direction: row;
 }
-/* 投票列表 end */
+.title{
+  padding: 10rpx 15rpx;
+}
+.peopelNum{
+  font-size: 20rpx;
+  color: #ccc;
+}
+/* 列表 end */

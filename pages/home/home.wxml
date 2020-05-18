@@ -20,15 +20,21 @@
     </view>
   </view>
   <!-- 中间模块 end -->
+
+  <!-- 列表 start -->
   <view class="vote">
     <view class="voteList" wx:for="{{voteList}}" wx:key="index">
       <view class="img">
         <image src="{{item.image}}"></image>
       </view>
-      <view class="content">
-        <view>{{item.title}}</view>
-        <view>{{item.peopelNum}}</view>
+      <view class="title">{{item.title}}</view>
+      <view class="avatorImageList">
+        <view class="avatorImage" style="transform:translateX({{-index*10}}rpx)" wx:for="{{avatorImageList}}" wx:key="index">
+          <image class="avator" src="{{item}}" mode="aspectFill"></image>
+        </view>
+        <view class="peopelNum">已参与 / {{item.peopelNum}}人</view>
       </view>
     </view>
   </view>
+  <!-- 列表 end -->
 </view>
